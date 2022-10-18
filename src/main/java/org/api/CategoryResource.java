@@ -2,10 +2,7 @@ package org.api;
 
 import org.api.model.Category;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
@@ -30,5 +27,12 @@ public class CategoryResource {
         category.description = "Electronics";
         category.initials = "ELT";
         return category;
+    }
+
+    @DELETE
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public void destroy(@PathParam("id") Long id) {
+        //
     }
 }
