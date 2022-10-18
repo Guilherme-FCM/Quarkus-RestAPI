@@ -19,11 +19,7 @@ public class CategoryResource {
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Category findById(@PathParam("id") Long id) {
-        Category category = new Category();
-        category.id = id;
-        category.description = "Electronics";
-        category.initials = "ELT";
-        return category;
+        return Category.findById(id);
     }
 
     @DELETE
