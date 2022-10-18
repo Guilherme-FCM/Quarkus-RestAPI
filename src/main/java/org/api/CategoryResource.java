@@ -26,6 +26,6 @@ public class CategoryResource {
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public void destroy(@PathParam("id") Long id) {
-        //
+        Category.deleteById(id);
     }
 }
