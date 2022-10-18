@@ -3,7 +3,7 @@
 -- insert into myentity (id, field) values(nextval('hibernate_sequence'), 'field-1');
 -- insert into myentity (id, field) values(nextval('hibernate_sequence'), 'field-2');
 -- insert into myentity (id, field) values(nextval('hibernate_sequence'), 'field-3');
-insert into Category values
-                         (1, 'Electronics', 'ELTC'),
-                         (2, 'Smartphones', 'SMTP'),
-                         (3, 'Domestic', 'DMTC');
+-- insert into Category values
+--                         (1, 'Electronics', 'ELTC'),
+--                         (2, 'Smartphones', 'SMTP'),
+--                         (3, 'Domestic', 'DMTC');
