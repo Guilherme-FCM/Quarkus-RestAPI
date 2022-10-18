@@ -12,10 +12,7 @@ public class CategoryResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<Category> findAll() {
-        return List.of(
-                new Category(1L, "Electronics", "ELT"),
-                new Category(2L, "Smartphones", "STP")
-        );
+        return Category.listAll();
     }
 
     @GET
