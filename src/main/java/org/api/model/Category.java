@@ -1,21 +1,15 @@
 package org.api.model;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
-
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 @Entity
-public class Category extends PanacheEntity {
+public class Category extends AbstractEntity {
     public String description;
     public String initials;
-
     public Category() {
     }
 
-    public Category(Long id, String description, String initials) {
-        this.id = id;
+    public Category(String description, String initials) {
         this.description = description;
         this.initials = initials;
     }
