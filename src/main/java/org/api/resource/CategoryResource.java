@@ -1,4 +1,4 @@
-package org.api;
+package org.api.resource;
 
 import org.api.model.Category;
 
