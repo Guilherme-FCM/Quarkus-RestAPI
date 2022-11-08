@@ -1,0 +1,1 @@
+web: java -jar -D quarkus.http.port=$PORT target/quarkus-app/quarkus-run.jsr
